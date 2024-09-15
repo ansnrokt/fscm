@@ -1,0 +1,3271 @@
+{
+	"info": {
+		"_postman_id": "0ac6c3fa-f725-4a68-a4d4-4f65c7497cee",
+		"name": "FSCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36231441",
+		"_collection_link": "https://bina-digital.postman.co/workspace/Satellite-Product~4960180c-9698-46ce-91c7-0500767d3cd8/collection/33891910-0ac6c3fa-f725-4a68-a4d4-4f65c7497cee?action=share&source=collection_link&creator=36231441"
+	},
+	"item": [
+		{
+			"name": "Proc",
+			"item": [
+				{
+					"name": "iGate",
+					"item": [
+						{
+							"name": "GetAccountBalance",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateTime\": \"20231129140213\",\r\n    \"referenceNumber\": \"202311082604\",\r\n    \"accountNumber\": \"1000241969\",\r\n    \"transactionType\": \"FINANCIAL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/igate/customer/account-balance",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"igate",
+										"customer",
+										"account-balance"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Individu",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateTime\": \"20231129140213\",\r\n    \"referenceNumber\": \"202311082604\",\r\n    \"accountNumber\": \"1000241969\",\r\n    \"transactionType\": \"FINANCIAL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/igate/customer/individual",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"igate",
+										"customer",
+										"individual"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Corporate",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateTime\": \"20231129140213\",\r\n    \"referenceNumber\": \"202311082604\",\r\n    \"accountNumber\": \"1000241969\",\r\n    \"transactionType\": \"FINANCIAL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/igate/customer/account-balance",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"igate",
+										"customer",
+										"account-balance"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "Get CIf",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/cifs/9979641507",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"cifs",
+										"9979641507"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/cifs/9979641507",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"cifs",
+												"9979641507"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "content-type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "date",
+											"value": "Thu, 07 Dec 2023 07:43:52 GMT"
+										},
+										{
+											"key": "content-length",
+											"value": "1052"
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "549"
+										},
+										{
+											"key": "server",
+											"value": "istio-envoy"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"encodedKey\": \"8ae381898c16418d018c39baa034074e\",\n        \"id\": \"9979641507\",\n        \"state\": \"ACTIVE\",\n        \"firstName\": \"XXX1010036875YYY\",\n        \"lastName\": \"XXX1010036875YYY\",\n        \"mobilePhone\": \"\",\n        \"emailAddress\": \"\",\n        \"preferredLanguage\": \"ENGLISH\",\n        \"birthDate\": \"2017-10-02\",\n        \"gender\": \"\",\n        \"notes\": \"Create CIF Account for FSCM\",\n        \"assignedBranchKey\": \"8a8e86237ca910b6017cc0243c3a62ff\",\n        \"clientRoleKey\": \"8a8e8e987c560e38017c5d844082016c\",\n        \"loanCycle\": 5,\n        \"groupLoanCycle\": 0,\n        \"groupKeys\": [],\n        \"creationDate\": \"2023-12-05T18:26:21+07:00\",\n        \"approvedDate\": \"2023-12-05T18:26:21+07:00\",\n        \"lastModifiedDate\": \"2023-12-06T08:54:20+07:00\",\n        \"activationDate\": \"2023-12-06T08:48:51+07:00\",\n        \"addresses\": [\n            {\n                \"city\": \"Town-country10100368\",\n                \"country\": \"\",\n                \"indexInList\": 0,\n                \"latitude\": 0,\n                \"line1\": \"GD PLAZA MUTIARA LT 21 SUITE 2105   Town-country1010036875  12950\",\n                \"longitude\": 0,\n                \"postcode\": \"\",\n                \"region\": \"\",\n                \"encodedKey\": \"8ae381898c16418d018c39baa034074f\",\n                \"parentKey\": \"8ae381898c16418d018c39baa034074e\",\n                \"line2\": \"\"\n            }\n        ],\n        \"idDocuments\": [],\n        \"_cfsPersonalData\": {\n            \"cfKtpNo\": \"\"\n        }\n    },\n    \"meta\": {}\n}"
+								},
+								{
+									"name": "Failed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/cifs/9979641502",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"cifs",
+												"9979641502"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "content-type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "date",
+											"value": "Thu, 07 Dec 2023 07:44:05 GMT"
+										},
+										{
+											"key": "content-length",
+											"value": "217"
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "591"
+										},
+										{
+											"key": "server",
+											"value": "istio-envoy"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"500\",\n    \"response_message\": \"Sistem mengalami gangguan, Mohon hubungi administrator\",\n    \"data\": null,\n    \"meta\": {\n        \"debug_param\": \"[{\\\"errorCode\\\":301,\\\"errorReason\\\":\\\"INVALID_CLIENT_ID\\\",\\\"errorSource\\\":\\\"\\\"}]\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Inquiry Account Number",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"console.log(\"customerNumber\",jsonData.data.cif)\r",
+											"pm.collectionVariables.set(\"customerNumber\", jsonData.data.cif);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local_proc_url}}/v1/account?accountNumber=1001701092",
+									"host": [
+										"{{local_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"account"
+									],
+									"query": [
+										{
+											"key": "accountNumber",
+											"value": "1001701092"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{local_proc_url}}/v1/account?accountNumber=1000887788",
+											"host": [
+												"{{local_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"account"
+											],
+											"query": [
+												{
+													"key": "accountNumber",
+													"value": "1000887788"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 07 Dec 2023 07:42:16 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "305"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"id\": \"ebbe594b-bc71-47cd-81fe-054dde59fc7e\",\n        \"partnerId\": \"\",\n        \"accountNumber\": \"1000887788\",\n        \"cif\": \"9979641507\",\n        \"cifEncodeKey\": \"8ae381898c16418d018c39baa034074e\",\n        \"customerType\": \"Corporate\",\n        \"createdAt\": \"2023-12-05T18:25:21.23227+07:00\"\n    },\n    \"meta\": {}\n}"
+								},
+								{
+									"name": "Failed 404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{local_proc_url}}/v1/account?accountNumber=1000887782",
+											"host": [
+												"{{local_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"account"
+											],
+											"query": [
+												{
+													"key": "accountNumber",
+													"value": "1000887782"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 07 Dec 2023 07:43:23 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "115"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"404\",\n    \"response_message\": \"Record not found\",\n    \"data\": null,\n    \"meta\": {\n        \"debug_param\": \"record not found\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Credit Arrangement",
+					"item": [
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"console.log(\"limitId\",jsonData.data.id)\r",
+											"pm.collectionVariables.set(\"limitId\", jsonData.data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "{{partnerId}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"customerNumber\": \"{{customerNumber}}\", // customerNumber\r\n  \"amount\": 25000000,\r\n  \"startDate\": \"2023-04-28T13:37:50+07:00\",\r\n  \"expireDate\": \"2025-05-31T13:37:50+07:00\",\r\n  \"accountNumber\": \"{{accountNumber}}\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_proc_url}}/v1/credit-arrangements",
+									"host": [
+										"{{local_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"credit-arrangements"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Succes",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"customerNumber\": \"2872641395\", // customerNumber\r\n  \"amount\": 25000000,\r\n  \"startDate\": \"2022-04-28T13:37:50+07:00\",\r\n  \"expireDate\": \"2022-05-31T13:37:50+07:00\",\r\n  \"accountNumber\": \"1000887788\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/credit-arrangements",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"credit-arrangements"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 03:02:28 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "228"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"id\": \"NKL502\",\n        \"notes\": \"\",\n        \"startDate\": \"2022-04-28T13:37:50+07:00\",\n        \"expireDate\": \"2022-05-31T13:37:50+07:00\",\n        \"lastModifiedDate\": \"2023-11-30T10:03:18+07:00\"\n    },\n    \"meta\": {}\n}"
+								},
+								{
+									"name": "[Error] Duplicate CustomerNumber",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"customerNumber\": \"2872641395\", // customerNumber\r\n  \"amount\": 25000000,\r\n  \"startDate\": \"2022-04-28T13:37:50+07:00\",\r\n  \"expireDate\": \"2022-05-31T13:37:50+07:00\",\r\n  \"accountNumber\": \"2872641395\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/credit-arrangements",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"credit-arrangements"
+											]
+										}
+									},
+									"status": "Unprocessable Entity",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 03:33:25 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "129"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"422\",\n    \"response_message\": \"Data sudah ada\",\n    \"data\": null,\n    \"meta\": {\n        \"debug_param\": \"Credit Arrangement Already Exist\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "{{partnerId}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"startDate\": \"2023-05-22T13:37:50+07:00\",\r\n  \"expireDate\": \"2024-05-30T13:37:50+07:00\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_proc_url}}/v1/credit-arrangements/:id",
+									"host": [
+										"{{local_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"credit-arrangements",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "EUR254"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Succes",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"customerNumber\": \"2872641395\", // customerNumber\r\n  \"amount\": 25000000,\r\n  \"startDate\": \"2022-04-28T13:37:50+07:00\",\r\n  \"expireDate\": \"2022-05-31T13:37:50+07:00\",\r\n  \"accountNumber\": \"1000887788\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/credit-arrangements",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"credit-arrangements"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 03:02:28 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "228"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"id\": \"NKL502\",\n        \"notes\": \"\",\n        \"startDate\": \"2022-04-28T13:37:50+07:00\",\n        \"expireDate\": \"2022-05-31T13:37:50+07:00\",\n        \"lastModifiedDate\": \"2023-11-30T10:03:18+07:00\"\n    },\n    \"meta\": {}\n}"
+								},
+								{
+									"name": "[Error] Duplicate CustomerNumber",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"customerNumber\": \"2872641395\", // customerNumber\r\n  \"amount\": 25000000,\r\n  \"startDate\": \"2022-04-28T13:37:50+07:00\",\r\n  \"expireDate\": \"2022-05-31T13:37:50+07:00\",\r\n  \"accountNumber\": \"2872641395\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/credit-arrangements",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"credit-arrangements"
+											]
+										}
+									},
+									"status": "Unprocessable Entity",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 03:33:25 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "129"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"422\",\n    \"response_message\": \"Data sudah ada\",\n    \"data\": null,\n    \"meta\": {\n        \"debug_param\": \"Credit Arrangement Already Exist\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "{{partnerId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/credit-arrangements/:id",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"credit-arrangements",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "NKL502"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Succes",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/credit-arrangements/:id",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"credit-arrangements",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "NKL502"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 03:32:33 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "398"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20151000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"id\": \"NKL502\",\n        \"amount\": 25000000,\n        \"state\": \"APPROVED\",\n        \"availableCreditAmount\": 25000000,\n        \"consumedCreditAmount\": 0,\n        \"startDate\": \"2022-04-28T13:37:50+07:00\",\n        \"expireDate\": \"2022-05-31T13:37:50+07:00\",\n        \"creationDate\": \"2023-11-30T10:03:19+07:00\",\n        \"approvedDate\": \"2023-11-30T10:03:19+07:00\",\n        \"lastModifiedDate\": \"2023-11-30T10:03:19+07:00\"\n    },\n    \"meta\": {}\n}"
+								},
+								{
+									"name": "[Error] Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/credit-arrangements/:id",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"credit-arrangements",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "NKL501"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 03:34:57 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "230"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"500\",\n    \"response_message\": \"Sistem mengalami gangguan, Mohon hubungi administrator\",\n    \"data\": null,\n    \"meta\": {\n        \"debug_param\": \"[{\\\"errorCode\\\":2456,\\\"errorReason\\\":\\\"INVALID_CREDIT_ARRANGEMENT_ID\\\",\\\"errorSource\\\":\\\"\\\"}]\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "LoanAccount",
+					"item": [
+						{
+							"name": "Get Loan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"console.log(\"Loan Id\",jsonData.data.loanId)\r",
+											"\r",
+											"pm.collectionVariables.set(\"loanId\", jsonData.data.loanId);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/loans/:id",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"loans",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{loanId}}"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"limitID\": \"XMS578\",\r\n    \"accountNumber\": \"1000887788\",\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 100000,\r\n    \"originalLoanDate\": 1701376993, // unix timestamp\r\n    \"maturityDate\": 1701672263 // unix timestamp\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/loans",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"loans"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Dec 2023 07:18:06 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "94"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20151000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"loanID\": \"SBEQ449\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Preview Loan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"    var jsonData = pm.response.json();\r",
+											"console.log(\"Loan Id\",data.loanId)\r",
+											"\r",
+											"pm.collectionVariables.set(\"loanId\", jsonData.data.loanId);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 5000000,\r\n    \"adminFee\":2666,\r\n    \"originalLoanDate\": \"2024-01-05T13:37:50+07:00\",\r\n    \"maturityDate\": \"2024-01-28T13:37:50+07:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/loans/preview-schedule",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"loans",
+										"preview-schedule"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Loan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"    var jsonData = pm.response.json();\r",
+											"console.log(\"Loan Id\",data.loanId)\r",
+											"\r",
+											"pm.collectionVariables.set(\"loanId\", jsonData.data.loanId);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"limitID\": \"{{limitId}}\",\r\n    \"accountNumber\": \"{{accountNumber}}\",\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 100000,\r\n    \"originalLoanDate\": 1701376993, // unix timestamp\r\n    \"maturityDate\": 1701672263 // unix timestamp\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_proc_url}}/v1/loans",
+									"host": [
+										"{{local_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"loans"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"limitID\": \"XMS578\",\r\n    \"accountNumber\": \"1000887788\",\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 100000,\r\n    \"originalLoanDate\": 1701376993, // unix timestamp\r\n    \"maturityDate\": 1701672263 // unix timestamp\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/loans",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"loans"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Dec 2023 07:18:06 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "94"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20151000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"loanID\": \"SBEQ449\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Disbursement",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"beneficiaryAccountNumber\": \"1000887788\",\r\n    \"adminFee\": 25000,\r\n    \"fee\": 15000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_proc_url}}/v1/loans/:id/disburse",
+									"host": [
+										"{{local_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"loans",
+										":id",
+										"disburse"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{loanId}}"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"limitID\": \"XMS578\",\r\n    \"accountNumber\": \"1000887788\",\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 100000,\r\n    \"originalLoanDate\": 1701376993, // unix timestamp\r\n    \"maturityDate\": 1701672263 // unix timestamp\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/loans",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"loans"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Dec 2023 07:18:06 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "94"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20151000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"loanID\": \"SBEQ449\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Repayment Preview",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/loans/:id/repayment-preview",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"loans",
+										":id",
+										"repayment-preview"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "JHSW767"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/loans/:id/repayment-preview",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"loans",
+												":id",
+												"repayment-preview"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "JHSW767"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 19 Dec 2023 08:16:02 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "179"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"feeBalance\": 0,\n        \"interestBalance\": 0,\n        \"penaltyBalance\": 0,\n        \"principalBalance\": 1000000,\n        \"totalBalance\": 1000000\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Repayment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"1000887788\",\r\n    \"note\": \"retry\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/loans/:id/repayment",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"loans",
+										":id",
+										"repayment"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"limitID\": \"XMS578\",\r\n    \"accountNumber\": \"1000887788\",\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 100000,\r\n    \"originalLoanDate\": 1701376993, // unix timestamp\r\n    \"maturityDate\": 1701672263 // unix timestamp\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/loans",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"loans"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Dec 2023 07:18:06 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "94"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20151000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"loanID\": \"SBEQ449\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Access-Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PARTNER-ID",
+								"value": "{{partnerId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loginClient\": \"client_credentials\", //refresh_token client_credentials\r\n    \"clientId\": \"sgo-tester\",\r\n    \"clientSecret\": \"a5e7bf62-2022-4501-ab77-2fbeb4235240\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{fscm_proc_url}}/v1/access-token",
+							"host": [
+								"{{fscm_proc_url}}"
+							],
+							"path": [
+								"v1",
+								"access-token"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Refresh token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"loginClient\": \"refresh_token\", //refresh_token client_credentials\r\n    \"clientId\": \"sgo-tester\",\r\n    \"clientSecret\": \"a5e7bf62-2022-4501-ab77-2fbeb4235240\",\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxYTczODIzZS0xY2UxLTQxOTgtOGVjZC1mM2IwMWU5OTRjYmQifQ.eyJleHAiOjE3MDAyMDgxMzIsImlhdCI6MTcwMDIwNjMzMiwianRpIjoiNDBhMDE4M2ItOTQ3MC00OTNjLWFmMTktYjI0OTQ3OWU5NWJlIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJodHRwczovL2tleWNsb2FrZGV2LmdjcC5iYW5raW5hLmlkL2F1dGgvcmVhbG1zL1NDRiIsInN1YiI6IjhjNTMzNzM2LTgyNjUtNDc3Zi1iNDQ1LTlmMWRmZmUzNWRkZCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJzZ28tdGVzdGVyIiwic2Vzc2lvbl9zdGF0ZSI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiIsInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiJ9.rFBKKPtcI2YRBDfa-V1k7GNIljkiLSfCeEo1fzvPRPo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/access-token",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"access-token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Nov 2023 07:32:01 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJRTjNPdFdGUXlGUHpFaUVMM1lNZTY1amdDYkxQazBkREk5VUQ4RERSOFR3In0.eyJleHAiOjE3MDAyMDY2NjksImlhdCI6MTcwMDIwNjM2OSwianRpIjoiMDE2OTgxYmYtYTQ1Ni00Y2JmLTg1MjUtYTVkYzkxM2RlNTU0IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOGM1MzM3MzYtODI2NS00NzdmLWI0NDUtOWYxZGZmZTM1ZGRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2dvLXRlc3RlciIsInNlc3Npb25fc3RhdGUiOiIzNjI2OTMxZS03M2U3LTQ3YjctYjA3YS0zYzQwNzgwNGZjNzIiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtc2NmIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiIsImNsaWVudEhvc3QiOiIzNC4xMDEuNDcuMTkwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRJZCI6InNnby10ZXN0ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2dvLXRlc3RlciIsImNsaWVudEFkZHJlc3MiOiIzNC4xMDEuNDcuMTkwIn0.m2eVxXvifscLDHmp2OYplsjuNMO1hfHkMfMb4Ij-xdOJIfA1BKusfgCimx5eLhzRwsI9D9pOJ1wXs0mEEId-cc1A1uTKW6LQ73Nx2S-Y337hlQG4-x1xT7853p3ukTx3Qx9C93bzoySZJrujxibPyF0vxCJJ7qo_ZRnVoqmiLIIF4LgpmFzGU1K3n3aq3mAJTHZa75jyJkQOO8kuvzrbmPRmTmqr3Imh9E75Il4hDyohcJUoSO836r98EPpqJfjsHa2uoJFecjvzMfuFZw2rc9eAD3UDXL-D-nc7BP-O5v0_KXXaFVm4WRqiK12WiLWzlU9FHAqzGCWx5oUw3K_68w\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxYTczODIzZS0xY2UxLTQxOTgtOGVjZC1mM2IwMWU5OTRjYmQifQ.eyJleHAiOjE3MDAyMDgxNjksImlhdCI6MTcwMDIwNjM2OSwianRpIjoiYTU5NDQwMGYtYWUwZC00Y2RlLThmN2ItZGViYWM3Mjc3NzBjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJodHRwczovL2tleWNsb2FrZGV2LmdjcC5iYW5raW5hLmlkL2F1dGgvcmVhbG1zL1NDRiIsInN1YiI6IjhjNTMzNzM2LTgyNjUtNDc3Zi1iNDQ1LTlmMWRmZmUzNWRkZCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJzZ28tdGVzdGVyIiwic2Vzc2lvbl9zdGF0ZSI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiIsInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiJ9.D9mkL0ww_fNkDZuGnX7cV7DgHIW3e_AzQ8crnFF13xg\",\n        \"tokenType\": \"Bearer\",\n        \"expiresIn\": 300\n    },\n    \"meta\": {}\n}"
+						},
+						{
+							"name": "Success New token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"loginClient\": \"client_credentials\", //refresh_token client_credentials\r\n    \"clientId\": \"sgo-tester\",\r\n    \"clientSecret\": \"a5e7bf62-2022-4501-ab77-2fbeb4235240\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/access-token",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"access-token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Nov 2023 00:52:30 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJRTjNPdFdGUXlGUHpFaUVMM1lNZTY1amdDYkxQazBkREk5VUQ4RERSOFR3In0.eyJleHAiOjE3MDA1MjgyOTIsImlhdCI6MTcwMDUyNzk5MiwianRpIjoiNzIwNWVkNzAtNzE5ZC00MzdkLWJhY2QtYjIxZTQ1YjY1ODZhIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOGM1MzM3MzYtODI2NS00NzdmLWI0NDUtOWYxZGZmZTM1ZGRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2dvLXRlc3RlciIsInNlc3Npb25fc3RhdGUiOiJmZDZmMmI5ZS04MWIwLTQ2MGEtOTNiMC00YWFmNzI1NTYxZmMiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtc2NmIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6ImZkNmYyYjllLTgxYjAtNDYwYS05M2IwLTRhYWY3MjU1NjFmYyIsImNsaWVudEhvc3QiOiIzNC4xMDEuNDcuMTkwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRJZCI6InNnby10ZXN0ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2dvLXRlc3RlciIsImNsaWVudEFkZHJlc3MiOiIzNC4xMDEuNDcuMTkwIn0.q22NQ9SAvmPbc7_yo0LhfLUaDRK3o8T-PbG2mqa4KmOZxAHSbWuoQm6CBwSmRDmUkNiioLnvsHV0HbB8YZf78QxAc-y3dyBiIPGUlquSS8ZlUFXhrXsiwE2dPeKX9JmW7LP3XtPFmAb8_znP9nJeDdM2O0dIqC1jOzDGzeGORLj3g_YoPrDq7CVfOWkZyjZ61xpqeEM4MggV_XKHdYe8ltx8FTk1191MZ9Mp09dWkwZy-HogajGpWKfgaIzQ9U5g2yeSYEcXJvdAqZQZ2PagjCu043qH_qjV_UqKoG5yWyUkbY0_LDNHvyfZt7wSza6wttrVl4aA9hnI84tJQcUHKA\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxYTczODIzZS0xY2UxLTQxOTgtOGVjZC1mM2IwMWU5OTRjYmQifQ.eyJleHAiOjE3MDA1Mjk3OTIsImlhdCI6MTcwMDUyNzk5MiwianRpIjoiYjlkNGQ0YjktOTRiNy00ZmRlLTgwNjAtNjBmMDNhZjdmMzM0IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJodHRwczovL2tleWNsb2FrZGV2LmdjcC5iYW5raW5hLmlkL2F1dGgvcmVhbG1zL1NDRiIsInN1YiI6IjhjNTMzNzM2LTgyNjUtNDc3Zi1iNDQ1LTlmMWRmZmUzNWRkZCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJzZ28tdGVzdGVyIiwic2Vzc2lvbl9zdGF0ZSI6ImZkNmYyYjllLTgxYjAtNDYwYS05M2IwLTRhYWY3MjU1NjFmYyIsInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6ImZkNmYyYjllLTgxYjAtNDYwYS05M2IwLTRhYWY3MjU1NjFmYyJ9.Ox_tNAqyiNdi5Ro90xcocW1cWOaUdhHhXvIw3czuhR4\",\n        \"tokenType\": \"Bearer\",\n        \"expiresIn\": 300\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Experience",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "Get CIF",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{fscm_exp_url}}/cifs/{{customerNumber}}",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"cifs",
+										"{{customerNumber}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{fscm_exp_url}}/v1/cifs/9979641507",
+											"host": [
+												"{{fscm_exp_url}}"
+											],
+											"path": [
+												"v1",
+												"cifs",
+												"9979641507"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 05 Dec 2023 12:01:52 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1049"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"encodedKey\": \"8ae381898c16418d018c39baa034074e\",\n        \"id\": \"9979641507\",\n        \"state\": \"INACTIVE\",\n        \"firstName\": \"XXX1010036875YYY\",\n        \"lastName\": \"XXX1010036875YYY\",\n        \"mobilePhone\": \"\",\n        \"emailAddress\": \"\",\n        \"preferredLanguage\": \"ENGLISH\",\n        \"birthDate\": \"2017-10-02\",\n        \"gender\": \"\",\n        \"notes\": \"Create CIF Account for FSCM\",\n        \"assignedBranchKey\": \"8a8e86237ca910b6017cc0243c3a62ff\",\n        \"clientRoleKey\": \"8a8e8e987c560e38017c5d844082016c\",\n        \"loanCycle\": 0,\n        \"groupLoanCycle\": 0,\n        \"groupKeys\": [],\n        \"creationDate\": \"2023-12-05T18:26:21+07:00\",\n        \"approvedDate\": \"2023-12-05T18:26:21+07:00\",\n        \"lastModifiedDate\": \"2023-12-05T18:26:21+07:00\",\n        \"activationDate\": \"0001-01-01T00:00:00Z\",\n        \"addresses\": [\n            {\n                \"city\": \"Town-country10100368\",\n                \"country\": \"\",\n                \"indexInList\": 0,\n                \"latitude\": 0,\n                \"line1\": \"GD PLAZA MUTIARA LT 21 SUITE 2105   Town-country1010036875  12950\",\n                \"longitude\": 0,\n                \"postcode\": \"\",\n                \"region\": \"\",\n                \"encodedKey\": \"8ae381898c16418d018c39baa034074f\",\n                \"parentKey\": \"8ae381898c16418d018c39baa034074e\",\n                \"line2\": \"\"\n            }\n        ],\n        \"idDocuments\": [],\n        \"_cfsPersonalData\": {\n            \"cfKtpNo\": \"\"\n        }\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Binding Account Number",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"console.log(\"customerNumber\",jsonData.data.customerNumber)\r",
+											"pm.collectionVariables.set(\"customerNumber\", jsonData.data.customerNumber);"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-tester",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerNo\": \"123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/account/1001701092",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"account",
+										"1001701092"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Error not fund",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{dev_url}}/account/{{accountNumber}}",
+											"host": [
+												"{{dev_url}}"
+											],
+											"path": [
+												"account",
+												"{{accountNumber}}"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 18 Dec 2023 06:23:49 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "activityid",
+											"value": "5a65e9f5-519f-4de0-967f-db3196b6fdaf"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": ""
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "2675"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,apikey,Internal-Key,Authorization"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=H4t7LsEYVhXrPcyx2CXvP4xB4p%2F26vgYiiJu3X%2Fah4QN8P1bhQ3fiBM1E%2BVxXhAKTVHAQqW1RDQux46sZn4EnfAbm9Cq%2FlLPUPssbA1jbFJ8k0NFfdtMhgwtmV4g%2BBEJMs0pIxnbjQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+										},
+										{
+											"key": "NEL",
+											"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "837551acfe6e68e4-CGK"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"responseCode\": \"50051000\",\n    \"responseMessage\": \"Sistem mengalami gangguan, Mohon hubungi administrator\",\n    \"data\": null,\n    \"meta\": {\n        \"debug_param\": \"Data Tidak Ditemukan\"\n    }\n}"
+								},
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{dev_url}}/account/{{accountNumber}}",
+											"host": [
+												"{{dev_url}}"
+											],
+											"path": [
+												"account",
+												"{{accountNumber}}"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "content-type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "date",
+											"value": "Thu, 15 Feb 2024 01:43:13 GMT"
+										},
+										{
+											"key": "content-length",
+											"value": "365"
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "4037"
+										},
+										{
+											"key": "server",
+											"value": "istio-envoy"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"200\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"accountNumber\": \"1001701181\",\n        \"accountName\": \"CIF CORP SATU\",\n        \"accountType\": \"GIRO\",\n        \"productCode\": \"1011\",\n        \"productName\": \"GIRO\",\n        \"currency\": \"IDR\",\n        \"workingBalance\": 0,\n        \"referenceNumber\": \"202463348247\",\n        \"dateTime\": \"20240215084310\",\n        \"customerNumber\": \"7529403288\",\n        \"customerType\": \"Corporate\",\n        \"limitId\": \"XNC159\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Inquiry Account Number",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"console.log(\"customerNumber\",jsonData.data.customerNumber)\r",
+											"pm.collectionVariables.set(\"customerNumber\", jsonData.data.customerNumber);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-tester",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{dev_url}}/account/{{accountNumber}}",
+									"host": [
+										"{{dev_url}}"
+									],
+									"path": [
+										"account",
+										"{{accountNumber}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Error not fund",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{dev_url}}/account/{{accountNumber}}",
+											"host": [
+												"{{dev_url}}"
+											],
+											"path": [
+												"account",
+												"{{accountNumber}}"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 18 Dec 2023 06:23:49 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "activityid",
+											"value": "5a65e9f5-519f-4de0-967f-db3196b6fdaf"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": ""
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "2675"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,apikey,Internal-Key,Authorization"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=H4t7LsEYVhXrPcyx2CXvP4xB4p%2F26vgYiiJu3X%2Fah4QN8P1bhQ3fiBM1E%2BVxXhAKTVHAQqW1RDQux46sZn4EnfAbm9Cq%2FlLPUPssbA1jbFJ8k0NFfdtMhgwtmV4g%2BBEJMs0pIxnbjQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+										},
+										{
+											"key": "NEL",
+											"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "837551acfe6e68e4-CGK"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"responseCode\": \"50051000\",\n    \"responseMessage\": \"Sistem mengalami gangguan, Mohon hubungi administrator\",\n    \"data\": null,\n    \"meta\": {\n        \"debug_param\": \"Data Tidak Ditemukan\"\n    }\n}"
+								},
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{dev_url}}/account/{{accountNumber}}",
+											"host": [
+												"{{dev_url}}"
+											],
+											"path": [
+												"account",
+												"{{accountNumber}}"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "content-type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "date",
+											"value": "Thu, 15 Feb 2024 01:43:13 GMT"
+										},
+										{
+											"key": "content-length",
+											"value": "365"
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "4037"
+										},
+										{
+											"key": "server",
+											"value": "istio-envoy"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"200\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"accountNumber\": \"1001701181\",\n        \"accountName\": \"CIF CORP SATU\",\n        \"accountType\": \"GIRO\",\n        \"productCode\": \"1011\",\n        \"productName\": \"GIRO\",\n        \"currency\": \"IDR\",\n        \"workingBalance\": 0,\n        \"referenceNumber\": \"202463348247\",\n        \"dateTime\": \"20240215084310\",\n        \"customerNumber\": \"7529403288\",\n        \"customerType\": \"Corporate\",\n        \"limitId\": \"XNC159\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Credit Arrangement",
+					"item": [
+						{
+							"name": "Create",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"console.log(\"limitId\",jsonData.data.id)\r",
+											"pm.collectionVariables.set(\"limitId\", jsonData.data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n  \"customerNumber\": \"{{customerNumber}}\",\r\n  \"amount\": 25000000,\r\n  \"startDate\": \"2023-04-28T13:37:50+07:00\",\r\n  \"expireDate\": \"2026-05-31T13:37:50+07:00\",\r\n  \"accountNumber\": \"{{accountNumber}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/credit-arrangements",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"credit-arrangements"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"console.log(\"limitId\",jsonData.data.id)\r",
+											"pm.collectionVariables.set(\"limitId\", jsonData.data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"amount\": 25000000,\r\n  \"expireDate\": \"2026-05-31T13:37:50+07:00\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/credit-arrangements/:id",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"credit-arrangements",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{limitId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{fscm_exp_url}}/credit-arrangements/:id",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"credit-arrangements",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{limitId}}"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{fscm_exp_url}}/v1/credit-arrangements/:id",
+											"host": [
+												"{{fscm_exp_url}}"
+											],
+											"path": [
+												"v1",
+												"credit-arrangements",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "JSX900"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 05 Dec 2023 04:19:10 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "398"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"id\": \"JSX900\",\n        \"amount\": 25000000,\n        \"state\": \"APPROVED\",\n        \"availableCreditAmount\": 25000000,\n        \"consumedCreditAmount\": 0,\n        \"startDate\": \"2022-04-28T13:37:50+07:00\",\n        \"expireDate\": \"2022-05-31T13:37:50+07:00\",\n        \"creationDate\": \"2023-12-05T11:20:01+07:00\",\n        \"approvedDate\": \"2023-12-05T11:20:01+07:00\",\n        \"lastModifiedDate\": \"2023-12-05T11:20:01+07:00\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "LoanAccount",
+					"item": [
+						{
+							"name": "Preview Loan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 1000000,\r\n    \"adminFee\":0,\r\n    \"originalLoanDate\": \"2024-02-05T13:37:50+07:00\",\r\n    \"maturityDate\": \"2024-02-14T13:37:50+07:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/preview-schedule",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										"preview-schedule"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 5000000,\r\n    \"adminFee\":2666,\r\n    \"originalLoanDate\": \"2024-01-05T13:37:50+07:00\",\r\n    \"maturityDate\": \"2024-01-28T13:37:50+07:00\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_exp_url}}/loans/preview-schedule",
+											"host": [
+												"{{fscm_exp_url}}"
+											],
+											"path": [
+												"loans",
+												"preview-schedule"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 15 Dec 2023 03:51:30 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "573"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"responseCode\": \"200\",\n    \"responseMessage\": \"Sukses\",\n    \"data\": {\n        \"installments\": [\n            {\n                \"number\": \"1\",\n                \"dueDate\": \"2024-01-28T07:00:00+07:00\",\n                \"state\": \"PENDING\",\n                \"isPaymentHoliday\": false,\n                \"principal\": {\n                    \"amount\": {\n                        \"expected\": 5000000,\n                        \"paid\": 0,\n                        \"due\": 5000000\n                    }\n                },\n                \"interest\": {\n                    \"amount\": {\n                        \"expected\": 28750,\n                        \"paid\": 0,\n                        \"due\": 28750\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"fee\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"penalty\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                }\n            }\n        ],\n        \"currency\": {\n            \"currencyCode\": \"IDR\",\n            \"code\": \"IDR\"\n        }\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Disbursement",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"console.log(\"Loan Id\",data.loanId)\r",
+											"\r",
+											"pm.collectionVariables.set(\"loanId\", jsonData.data.loanId);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"limitID\": \"{{limitId}}\",\r\n    \"accountNumber\": \"{{accountNumber}}\",\r\n    \"InvoiceNo\": \"No123123QWEQ\",\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 1000000,\r\n    \"originalLoanDate\": \"2023-12-05T13:37:50+07:00\",\r\n    \"maturityDate\": \"2024-01-28T13:37:50+07:00\",\r\n    \"beneficiaryAccountNumber\": \"1000887788\",\r\n    \"PenaltyRate\":3,\r\n    \"adminFee\": 500\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/disbursement",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										"disbursement"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"beneficiaryAccountNumber\": \"1000887788\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_exp_url}}/v1/loans/:id/disbursement",
+											"host": [
+												"{{fscm_exp_url}}"
+											],
+											"path": [
+												"v1",
+												"loans",
+												":id",
+												"disbursement"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "FKTV942"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 05 Dec 2023 05:35:51 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "681"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20151000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"Id\": \"FKTV942\",\n        \"Amount\": 100000,\n        \"AdminFee\": 0,\n        \"CreditArrangementId\": \"ADT383\",\n        \"CustomerId\": \"578f522c-a45f-45bc-8210-f5d0c11fad6f\",\n        \"DisbursementAmount\": 0,\n        \"DisbursementTransactionId\": \"\",\n        \"DisburseCoreReference\": \"\",\n        \"Fee\": 0,\n        \"HolderKey\": \"8ae381898c16418d018c37eb2b5b066b\",\n        \"HolderType\": \"CLIENT\",\n        \"InterestRate\": 9,\n        \"PayoffAmount\": 0,\n        \"PayoffTransactionId\": \"\",\n        \"PayoffCoreReference\": \"\",\n        \"Status\": \"NEW\",\n        \"StatusDescription\": \"\",\n        \"originalLoanDate\": 1701376993,\n        \"maturityDate\": 1701672263,\n        \"LoanDisbursementDate\": \"0001-01-01T07:00:00+07:00\",\n        \"LoanPayoffDate\": \"0001-01-01T07:00:00+07:00\",\n        \"CreatedAt\": \"2023-12-05T11:25:52.617268+07:00\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Loan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/:id",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{loanId}}"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"limitID\": \"XMS578\",\r\n    \"accountNumber\": \"1000887788\",\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 100000,\r\n    \"originalLoanDate\": 1701376993, // unix timestamp\r\n    \"maturityDate\": 1701672263 // unix timestamp\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{fscm_proc_url}}/v1/loans",
+											"host": [
+												"{{fscm_proc_url}}"
+											],
+											"path": [
+												"v1",
+												"loans"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Dec 2023 07:18:06 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "94"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20151000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"loanID\": \"SBEQ449\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Repayment Preview",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/:id/repayment-preview",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										":id",
+										"repayment-preview"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{loanId}}"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{local_exp_url}}/loans/:id/repayment-preview",
+											"host": [
+												"{{local_exp_url}}"
+											],
+											"path": [
+												"loans",
+												":id",
+												"repayment-preview"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "JHSW767"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 19 Dec 2023 08:32:29 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "172"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"responseCode\": \"200\",\n    \"responseMessage\": \"Sukses\",\n    \"data\": {\n        \"feeBalance\": 0,\n        \"interestBalance\": 0,\n        \"penaltyBalance\": 0,\n        \"principalBalance\": 1000000,\n        \"totalBalance\": 1000000\n    },\n    \"meta\": {}\n}"
+								},
+								{
+									"name": "Failed not found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{local_exp_url}}/loans/:id/repayment-preview",
+											"host": [
+												"{{local_exp_url}}"
+											],
+											"path": [
+												"loans",
+												":id",
+												"repayment-preview"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "JHSW762"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 19 Dec 2023 08:33:02 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "122"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"responseCode\": \"40451000\",\n    \"responseMessage\": \"Data tidak ditemukan\",\n    \"data\": null,\n    \"meta\": {\n        \"debug_param\": \"record not found\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Repayment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountNumber\": \"1000887788\",\r\n    \"invoiceNo\": \"122.122.111\",\r\n    \"externalPaymentId\": \"112.xx.xx.111\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/:id/repayment",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										":id",
+										"repayment"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{loanId}}"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Repayment",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-PARTNER-ID",
+												"value": "sgo-test",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"accountNumber\": \"1000887788\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{local_exp_url}}/v1/loans/:id/repayment",
+											"host": [
+												"{{local_exp_url}}"
+											],
+											"path": [
+												"v1",
+												"loans",
+												":id",
+												"repayment"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "{{loanId}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 08 Dec 2023 07:01:59 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "104"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"response_code\": \"20052000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"referenceId\": \"202339415222\"\n    },\n    \"meta\": {}\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Token",
+					"item": [
+						{
+							"name": "Generate",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJRTjNPdFdGUXlGUHpFaUVMM1lNZTY1amdDYkxQazBkREk5VUQ4RERSOFR3In0.eyJleHAiOjE3MjU5MDk5ODcsImlhdCI6MTcyNTg3Mzk4NywianRpIjoiMTI4ZDBlOTQtMzE3Zi00NDc4LWE0NTQtYzc1OGE5OTE5MjVmIiwiaXNzIjoiaHR0cHM6Ly9kZXYta2V5Y2xvYWsuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiOGM1MzM3MzYtODI2NS00NzdmLWI0NDUtOWYxZGZmZTM1ZGRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2dvLXRlc3RlciIsInNlc3Npb25fc3RhdGUiOiI3MTBlYjgyMC1lNTFjLTQwNGUtOWJmYi01ZDkwYTAzNzlkOWIiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zY2YiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImRlZmF1bHQgZW1haWwgcHJvZmlsZSIsInNpZCI6IjcxMGViODIwLWU1MWMtNDA0ZS05YmZiLTVkOTBhMDM3OWQ5YiIsImNsaWVudEhvc3QiOiIxMC41LjguMjA3IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRJZCI6InNnby10ZXN0ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2dvLXRlc3RlciIsImNsaWVudEFkZHJlc3MiOiIxMC41LjguMjA3In0.D3vRt34LTCLD-pwGSwLlyAFZZpizP4ZFD2h_qgi0Mfwe3KOS0H8oQMvtWPuOmjm-hjxD-LmQ9cY1qIL4ne-ZOWch1OKc9jnb0v8aaBAP8RtW89_n9ftHjP3_iVhWaE1Q9JjZ_0BCK-NNyENDxNCpYO9CCF9VVZXxHueiOFWO-Gc9yaGzXz6wrWhViwhccsyGbauvL2JdCj6_b2fOU6IXmQLghodpjFC2KkQVn82cNoy2DE59N7IZw2Nl-6rLC63hZx2bYCYfV3l5N7GF_xp9L1HMkqml0bFT8G7ad9t5GeVGuIGjWMydIYh_VhNErkipqOzg8vP_K_gFXuLd-HsBuA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"channel\": \"SMS\",\r\n  \"type\": \"REGISTRATION\",\r\n  \"mobilePhone\": \"085523836731\",\r\n  \"email\": \"donoson@yahoo.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apigw-dev.bankina.id/exp-fscm/1.0/otp/generate",
+									"protocol": "https",
+									"host": [
+										"apigw-dev",
+										"bankina",
+										"id"
+									],
+									"path": [
+										"exp-fscm",
+										"1.0",
+										"otp",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Access-Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"console.log(\"accessToken\",jsonData.data.accessToken)\r",
+									"pm.collectionVariables.set(\"accessToken\", jsonData.data.accessToken);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PARTNER-ID",
+								"value": "{{partnerId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loginClient\": \"client_credentials\", //refresh_token client_credentials\r\n    \"clientId\": \"sgo-tester\",\r\n    \"clientSecret\": \"728ea39d-d3ea-4b01-a154-3b32c2e9f415\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{fscm_exp_url}}/access-token",
+							"host": [
+								"{{fscm_exp_url}}"
+							],
+							"path": [
+								"access-token"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Refresh token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"loginClient\": \"refresh_token\", //refresh_token client_credentials\r\n    \"clientId\": \"sgo-tester\",\r\n    \"clientSecret\": \"a5e7bf62-2022-4501-ab77-2fbeb4235240\",\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxYTczODIzZS0xY2UxLTQxOTgtOGVjZC1mM2IwMWU5OTRjYmQifQ.eyJleHAiOjE3MDAyMDgxMzIsImlhdCI6MTcwMDIwNjMzMiwianRpIjoiNDBhMDE4M2ItOTQ3MC00OTNjLWFmMTktYjI0OTQ3OWU5NWJlIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJodHRwczovL2tleWNsb2FrZGV2LmdjcC5iYW5raW5hLmlkL2F1dGgvcmVhbG1zL1NDRiIsInN1YiI6IjhjNTMzNzM2LTgyNjUtNDc3Zi1iNDQ1LTlmMWRmZmUzNWRkZCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJzZ28tdGVzdGVyIiwic2Vzc2lvbl9zdGF0ZSI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiIsInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiJ9.rFBKKPtcI2YRBDfa-V1k7GNIljkiLSfCeEo1fzvPRPo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/access-token",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"access-token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Nov 2023 07:32:01 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJRTjNPdFdGUXlGUHpFaUVMM1lNZTY1amdDYkxQazBkREk5VUQ4RERSOFR3In0.eyJleHAiOjE3MDAyMDY2NjksImlhdCI6MTcwMDIwNjM2OSwianRpIjoiMDE2OTgxYmYtYTQ1Ni00Y2JmLTg1MjUtYTVkYzkxM2RlNTU0IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOGM1MzM3MzYtODI2NS00NzdmLWI0NDUtOWYxZGZmZTM1ZGRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2dvLXRlc3RlciIsInNlc3Npb25fc3RhdGUiOiIzNjI2OTMxZS03M2U3LTQ3YjctYjA3YS0zYzQwNzgwNGZjNzIiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtc2NmIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiIsImNsaWVudEhvc3QiOiIzNC4xMDEuNDcuMTkwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRJZCI6InNnby10ZXN0ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2dvLXRlc3RlciIsImNsaWVudEFkZHJlc3MiOiIzNC4xMDEuNDcuMTkwIn0.m2eVxXvifscLDHmp2OYplsjuNMO1hfHkMfMb4Ij-xdOJIfA1BKusfgCimx5eLhzRwsI9D9pOJ1wXs0mEEId-cc1A1uTKW6LQ73Nx2S-Y337hlQG4-x1xT7853p3ukTx3Qx9C93bzoySZJrujxibPyF0vxCJJ7qo_ZRnVoqmiLIIF4LgpmFzGU1K3n3aq3mAJTHZa75jyJkQOO8kuvzrbmPRmTmqr3Imh9E75Il4hDyohcJUoSO836r98EPpqJfjsHa2uoJFecjvzMfuFZw2rc9eAD3UDXL-D-nc7BP-O5v0_KXXaFVm4WRqiK12WiLWzlU9FHAqzGCWx5oUw3K_68w\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxYTczODIzZS0xY2UxLTQxOTgtOGVjZC1mM2IwMWU5OTRjYmQifQ.eyJleHAiOjE3MDAyMDgxNjksImlhdCI6MTcwMDIwNjM2OSwianRpIjoiYTU5NDQwMGYtYWUwZC00Y2RlLThmN2ItZGViYWM3Mjc3NzBjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJodHRwczovL2tleWNsb2FrZGV2LmdjcC5iYW5raW5hLmlkL2F1dGgvcmVhbG1zL1NDRiIsInN1YiI6IjhjNTMzNzM2LTgyNjUtNDc3Zi1iNDQ1LTlmMWRmZmUzNWRkZCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJzZ28tdGVzdGVyIiwic2Vzc2lvbl9zdGF0ZSI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiIsInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjM2MjY5MzFlLTczZTctNDdiNy1iMDdhLTNjNDA3ODA0ZmM3MiJ9.D9mkL0ww_fNkDZuGnX7cV7DgHIW3e_AzQ8crnFF13xg\",\n        \"tokenType\": \"Bearer\",\n        \"expiresIn\": 300\n    },\n    \"meta\": {}\n}"
+						},
+						{
+							"name": "Success New token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"loginClient\": \"client_credentials\", //refresh_token client_credentials\r\n    \"clientId\": \"sgo-tester\",\r\n    \"clientSecret\": \"a5e7bf62-2022-4501-ab77-2fbeb4235240\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_proc_url}}/v1/access-token",
+									"host": [
+										"{{fscm_proc_url}}"
+									],
+									"path": [
+										"v1",
+										"access-token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Nov 2023 00:52:30 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response_code\": \"20051000\",\n    \"response_message\": \"Sukses\",\n    \"data\": {\n        \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJRTjNPdFdGUXlGUHpFaUVMM1lNZTY1amdDYkxQazBkREk5VUQ4RERSOFR3In0.eyJleHAiOjE3MDA1MjgyOTIsImlhdCI6MTcwMDUyNzk5MiwianRpIjoiNzIwNWVkNzAtNzE5ZC00MzdkLWJhY2QtYjIxZTQ1YjY1ODZhIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOGM1MzM3MzYtODI2NS00NzdmLWI0NDUtOWYxZGZmZTM1ZGRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2dvLXRlc3RlciIsInNlc3Npb25fc3RhdGUiOiJmZDZmMmI5ZS04MWIwLTQ2MGEtOTNiMC00YWFmNzI1NTYxZmMiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtc2NmIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6ImZkNmYyYjllLTgxYjAtNDYwYS05M2IwLTRhYWY3MjU1NjFmYyIsImNsaWVudEhvc3QiOiIzNC4xMDEuNDcuMTkwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRJZCI6InNnby10ZXN0ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2dvLXRlc3RlciIsImNsaWVudEFkZHJlc3MiOiIzNC4xMDEuNDcuMTkwIn0.q22NQ9SAvmPbc7_yo0LhfLUaDRK3o8T-PbG2mqa4KmOZxAHSbWuoQm6CBwSmRDmUkNiioLnvsHV0HbB8YZf78QxAc-y3dyBiIPGUlquSS8ZlUFXhrXsiwE2dPeKX9JmW7LP3XtPFmAb8_znP9nJeDdM2O0dIqC1jOzDGzeGORLj3g_YoPrDq7CVfOWkZyjZ61xpqeEM4MggV_XKHdYe8ltx8FTk1191MZ9Mp09dWkwZy-HogajGpWKfgaIzQ9U5g2yeSYEcXJvdAqZQZ2PagjCu043qH_qjV_UqKoG5yWyUkbY0_LDNHvyfZt7wSza6wttrVl4aA9hnI84tJQcUHKA\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxYTczODIzZS0xY2UxLTQxOTgtOGVjZC1mM2IwMWU5OTRjYmQifQ.eyJleHAiOjE3MDA1Mjk3OTIsImlhdCI6MTcwMDUyNzk5MiwianRpIjoiYjlkNGQ0YjktOTRiNy00ZmRlLTgwNjAtNjBmMDNhZjdmMzM0IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJodHRwczovL2tleWNsb2FrZGV2LmdjcC5iYW5raW5hLmlkL2F1dGgvcmVhbG1zL1NDRiIsInN1YiI6IjhjNTMzNzM2LTgyNjUtNDc3Zi1iNDQ1LTlmMWRmZmUzNWRkZCIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJzZ28tdGVzdGVyIiwic2Vzc2lvbl9zdGF0ZSI6ImZkNmYyYjllLTgxYjAtNDYwYS05M2IwLTRhYWY3MjU1NjFmYyIsInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6ImZkNmYyYjllLTgxYjAtNDYwYS05M2IwLTRhYWY3MjU1NjFmYyJ9.Ox_tNAqyiNdi5Ro90xcocW1cWOaUdhHhXvIw3czuhR4\",\n        \"tokenType\": \"Bearer\",\n        \"expiresIn\": 300\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Notif",
+			"item": [
+				{
+					"name": "Send Message",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PARTNER-ID",
+								"value": "sgo-test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"wa\",\r\n  \"template\": \"648029efcd8d1201661dacb3\",\r\n  \"recipient\": \"085523836730\",\r\n  \"params\": {\r\n    \"components\": [\r\n                {\r\n                    \"type\": \"body\",\r\n                    \"parameters\": [\r\n                        {\r\n                            \"type\": \"text\",\r\n                            \"text\": \"1331 a/n Rovi Fauzan Akbar\"\r\n                        },\r\n                        {\r\n                            \"type\": \"text\",\r\n                            \"text\": \"5000.000.000\"\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dev-exp-api-fscm.bankina.id/v1/notifications/",
+							"protocol": "https",
+							"host": [
+								"dev-exp-api-fscm",
+								"bankina",
+								"id"
+							],
+							"path": [
+								"v1",
+								"notifications",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 5000000,\r\n    \"adminFee\":2666,\r\n    \"originalLoanDate\": \"2024-01-05T13:37:50+07:00\",\r\n    \"maturityDate\": \"2024-01-28T13:37:50+07:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/preview-schedule",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										"preview-schedule"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Dec 2023 03:51:30 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "573"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"200\",\n    \"responseMessage\": \"Sukses\",\n    \"data\": {\n        \"installments\": [\n            {\n                \"number\": \"1\",\n                \"dueDate\": \"2024-01-28T07:00:00+07:00\",\n                \"state\": \"PENDING\",\n                \"isPaymentHoliday\": false,\n                \"principal\": {\n                    \"amount\": {\n                        \"expected\": 5000000,\n                        \"paid\": 0,\n                        \"due\": 5000000\n                    }\n                },\n                \"interest\": {\n                    \"amount\": {\n                        \"expected\": 28750,\n                        \"paid\": 0,\n                        \"due\": 28750\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"fee\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"penalty\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                }\n            }\n        ],\n        \"currency\": {\n            \"currencyCode\": \"IDR\",\n            \"code\": \"IDR\"\n        }\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Send Message Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PARTNER-ID",
+								"value": "sgo-test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"wa\", // test\r\n    \"template\": \"648029efcd8d1201661dacb3\",\r\n    \"recipient\": \"085523836730\",\r\n    \"params\": {\r\n        \"parameters\": [\r\n            {\r\n                \"type\": \"text\",\r\n                \"text\": \"1331 atas nama Rovi Fauzan Akbar\"\r\n            },\r\n            {\r\n                \"type\": \"text\",\r\n                \"text\": \"5000.000.000\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apigw-stg.bankina.id/exp-fscm/1.0/notifications",
+							"protocol": "https",
+							"host": [
+								"apigw-stg",
+								"bankina",
+								"id"
+							],
+							"path": [
+								"exp-fscm",
+								"1.0",
+								"notifications"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 5000000,\r\n    \"adminFee\":2666,\r\n    \"originalLoanDate\": \"2024-01-05T13:37:50+07:00\",\r\n    \"maturityDate\": \"2024-01-28T13:37:50+07:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/preview-schedule",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										"preview-schedule"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Dec 2023 03:51:30 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "573"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"200\",\n    \"responseMessage\": \"Sukses\",\n    \"data\": {\n        \"installments\": [\n            {\n                \"number\": \"1\",\n                \"dueDate\": \"2024-01-28T07:00:00+07:00\",\n                \"state\": \"PENDING\",\n                \"isPaymentHoliday\": false,\n                \"principal\": {\n                    \"amount\": {\n                        \"expected\": 5000000,\n                        \"paid\": 0,\n                        \"due\": 5000000\n                    }\n                },\n                \"interest\": {\n                    \"amount\": {\n                        \"expected\": 28750,\n                        \"paid\": 0,\n                        \"due\": 28750\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"fee\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"penalty\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                }\n            }\n        ],\n        \"currency\": {\n            \"currencyCode\": \"IDR\",\n            \"code\": \"IDR\"\n        }\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Send Message Tempalte portal",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PARTNER-ID",
+								"value": "sgo-test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"type\": \"wa\",\r\n\t\"template\": \"6480346db6ef144f3d34a78c\",\r\n\t\"recipient\": \"085224551945\",\r\n\t\"params\": {\r\n\t\t \"parameters\": [\r\n            {\r\n                \"type\": \"text\",\r\n                \"text\": \"1331\"\r\n            }\r\n        ]\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/notifications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"notifications"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 5000000,\r\n    \"adminFee\":2666,\r\n    \"originalLoanDate\": \"2024-01-05T13:37:50+07:00\",\r\n    \"maturityDate\": \"2024-01-28T13:37:50+07:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/preview-schedule",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										"preview-schedule"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Dec 2023 03:51:30 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "573"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"200\",\n    \"responseMessage\": \"Sukses\",\n    \"data\": {\n        \"installments\": [\n            {\n                \"number\": \"1\",\n                \"dueDate\": \"2024-01-28T07:00:00+07:00\",\n                \"state\": \"PENDING\",\n                \"isPaymentHoliday\": false,\n                \"principal\": {\n                    \"amount\": {\n                        \"expected\": 5000000,\n                        \"paid\": 0,\n                        \"due\": 5000000\n                    }\n                },\n                \"interest\": {\n                    \"amount\": {\n                        \"expected\": 28750,\n                        \"paid\": 0,\n                        \"due\": 28750\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"fee\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"penalty\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                }\n            }\n        ],\n        \"currency\": {\n            \"currencyCode\": \"IDR\",\n            \"code\": \"IDR\"\n        }\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Send Message Template portal Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PARTNER-ID",
+								"value": "sgo-test",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"type\": \"wa\",\r\n\t\"template\": \"6480346db6ef144f3d34a78c\",\r\n\t\"recipient\": \"085523836730\",\r\n\t\"params\": {\r\n\t\t \"parameters\": [\r\n            {\r\n                \"type\": \"text\",\r\n                \"text\": \"1331\"\r\n            }\r\n        ]\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/notifications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"notifications"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-PARTNER-ID",
+										"value": "sgo-test",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"interestRate\": 9,\r\n    \"loanAmount\": 5000000,\r\n    \"adminFee\":2666,\r\n    \"originalLoanDate\": \"2024-01-05T13:37:50+07:00\",\r\n    \"maturityDate\": \"2024-01-28T13:37:50+07:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fscm_exp_url}}/loans/preview-schedule",
+									"host": [
+										"{{fscm_exp_url}}"
+									],
+									"path": [
+										"loans",
+										"preview-schedule"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Dec 2023 03:51:30 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "573"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseCode\": \"200\",\n    \"responseMessage\": \"Sukses\",\n    \"data\": {\n        \"installments\": [\n            {\n                \"number\": \"1\",\n                \"dueDate\": \"2024-01-28T07:00:00+07:00\",\n                \"state\": \"PENDING\",\n                \"isPaymentHoliday\": false,\n                \"principal\": {\n                    \"amount\": {\n                        \"expected\": 5000000,\n                        \"paid\": 0,\n                        \"due\": 5000000\n                    }\n                },\n                \"interest\": {\n                    \"amount\": {\n                        \"expected\": 28750,\n                        \"paid\": 0,\n                        \"due\": 28750\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"fee\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                },\n                \"penalty\": {\n                    \"amount\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    },\n                    \"tax\": {\n                        \"expected\": 0,\n                        \"paid\": 0,\n                        \"due\": 0\n                    }\n                }\n            }\n        ],\n        \"currency\": {\n            \"currencyCode\": \"IDR\",\n            \"code\": \"IDR\"\n        }\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "https://dev-proc-api-channeling.bankina.id/v1/user/97125121-ea32-4ee0-8706-5b7375e83e94",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-proc-api-channeling.bankina.id/v1/user/97125121-ea32-4ee0-8706-5b7375e83e94",
+					"protocol": "https",
+					"host": [
+						"dev-proc-api-channeling",
+						"bankina",
+						"id"
+					],
+					"path": [
+						"v1",
+						"user",
+						"97125121-ea32-4ee0-8706-5b7375e83e94"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{accessToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "partnerId",
+			"value": "sgo-tester"
+		},
+		{
+			"key": "loanId",
+			"value": ""
+		},
+		{
+			"key": "fscm_proc_url",
+			"value": "https://dev-proc-api-fscm.bankina.id",
+			"type": "default"
+		},
+		{
+			"key": "fscm_exp_url",
+			"value": "https://apigw-dev.bankina.id/exp-fscm/1.0",
+			"type": "default"
+		},
+		{
+			"key": "local_proc_url",
+			"value": "localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "local_exp_url",
+			"value": "localhost:8282/v1",
+			"type": "string"
+		},
+		{
+			"key": "customerNumber",
+			"value": ""
+		},
+		{
+			"key": "auth",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJRTjNPdFdGUXlGUHpFaUVMM1lNZTY1amdDYkxQazBkREk5VUQ4RERSOFR3In0.eyJleHAiOjE3MDI0NDkwODUsImlhdCI6MTcwMjQ0ODc4NSwianRpIjoiYmRmNDMyZDMtMzRlNi00OGM2LWJjYjAtODIxZmY5ODhiZjllIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9ha2Rldi5nY3AuYmFua2luYS5pZC9hdXRoL3JlYWxtcy9TQ0YiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOGM1MzM3MzYtODI2NS00NzdmLWI0NDUtOWYxZGZmZTM1ZGRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2dvLXRlc3RlciIsInNlc3Npb25fc3RhdGUiOiIyMDFmM2Q0My1lYTA5LTQzN2UtYjQwMS0wYWFlZmRmZTc5MjAiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtc2NmIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjIwMWYzZDQzLWVhMDktNDM3ZS1iNDAxLTBhYWVmZGZlNzkyMCIsImNsaWVudEhvc3QiOiIzNC4xMDEuOTAuMTM0IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRJZCI6InNnby10ZXN0ZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2dvLXRlc3RlciIsImNsaWVudEFkZHJlc3MiOiIzNC4xMDEuOTAuMTM0In0.iFF1S0XaB4FaeUz6ESp_LnncUjg9qlmQTSMUqsvYd9ztkui5SydDEcArIldeRL_kdhjQ9j9yo7RShLZhKKp1TRIubfhvllBIpKzhPUXlAqlPtYmGz-SrwIGDxqtLLNKi6NZaqgqEZslBUBjA73kXvD4p3UEatojBzd_elMDVzPCL70nP1cMwzfz-wfpSeVakmeDKjQd0Z_YDSTWACuDCFXQHBtwqTCpiNjoVVyVRfKyluOUcIzkCcUM3NRl70iRSAxzVeswddCFA9i_5DE7CySRS_MOmsBokhYoDisrc_OlhdQbnjvrEF2JgQqYkpjX6fAFI473mg9uZxEHiyyoHaQ"
+		},
+		{
+			"key": "accessToken",
+			"value": ""
+		},
+		{
+			"key": "accountNumber",
+			"value": "1001701173",
+			"type": "string"
+		},
+		{
+			"key": "limitId",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"value": "",
+			"type": "string"
+		}
+	]
+}
